@@ -4,8 +4,7 @@ function BubbleSort(array){
         for(let j = 0; j <= array.length-1; j++){
             if(array[j]>array[j+1]){
                 let temp = array[j]
-                let temp2 = array[j+1]
-                array[j] = temp2
+                array[j] = array[j+1]
                 array[j+1] = temp
                 swapped=true
             }
@@ -17,5 +16,5 @@ function BubbleSort(array){
     return array
 }
 
-numbers = [4, 2, 1, 12, 6, 8]
+numbers = [5, 3, 9, 12, 1, 7, 5, 3]
 console.log(BubbleSort(numbers))
